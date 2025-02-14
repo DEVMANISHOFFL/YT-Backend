@@ -1,6 +1,10 @@
 {
   "dependencies": {
-    "init": "^0.1.2"
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "init": "^0.1.2",
+    "mongodb": "^6.13.0",
+    "mongoose": "^8.10.0"
   },
   "name": "yt-backend",
   "version": "1.0.0",
@@ -8,11 +12,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^3.1.9"
+    "nodemon": "^3.1.9",
+    "prettier": "^3.5.1"
   }
 }
